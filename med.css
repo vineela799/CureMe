@@ -1,0 +1,166 @@
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+.brand-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #8a2be2;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #555;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li.active a {
+    background: #8a2be2;
+    color:  #8a2be2;
+}
+
+.chat-container {
+    flex: 1;
+    padding: 40px;
+   
+}
+
+.chat-title {
+    color: #8a2be2;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.greeting {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.question {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.chat-input {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+}
+
+.chat-input button {
+    background: #8a2be2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: gray;
+    margin-top: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: linear-gradient(to right, #a970ff, #d4a8ff);
+}
+
+.sidebar {
+    width: 250px;
+    /* background:#a970ff; */
+    background: linear-gradient(to right, #a970ff, #d4a8ff);
+    padding: 20px;
+    height: 100vh;
+    border-radius: 20px;
+}
+
+.logo {
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+ul li.active {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+h1 span {
+    color: #6c1ed7;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

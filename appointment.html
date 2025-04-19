@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <link rel="stylesheet" href="appointment.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Booking Box -->
+        <div class="booking-box" id="bookingBox">
+            <h2>Appointment Booking</h2>
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="email" id="email" placeholder="Enter Email">
+            <input type="date" id="date">
+            <input type="time" id="time">
+            <textarea id="details" placeholder="Additional Details"></textarea>
+            <button onclick="bookAppointment()">Book</button>
+        </div>
+
+        <!-- Appointment Display Box -->
+        <div id="appointments">
+            <h2>Booked Appointments</h2>
+            <div  id="appointmentList" class="grid-container"></div>
+            <button  onclick="showBookingForm()">Book Another Appointment</button>
+            <button onclick="homeForm()">Go to Home</a></button>
+        </div>
+    </div>
+   
+
+
+    <script src="appointment.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow:hidden;
+    background: linear-gradient(to bottom, #8a2be2, #d8b5ff);
+    /* background-image: linear-gradient( 135deg, #E2B0FF 10%, #9F44D3 100%); */
+}
+
+.chat-container {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #8a2be2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-log {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.input-area {
+    padding: 10px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+}
+
+.listen-button {
+    padding: 10px 20px;
+    /* background-color: #4CAF50;  */
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.listen-button:hover {
+    /* background-color: #3e8e41; */
+    background-color: #430979;
+}
+
+.chat-log div {
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.chat-log div:nth-child(even) {
+    background-color: #e6f7ff; 
+}
+.chat-log div:nth-child(odd) {
+    background-color: #f0f0f0; 
+} 
+.listen-button {
+    padding: 15px 30px; /* Larger button */
+    /* background-color: #4CAF50; */
+    background-color: #430979;
+    color: white;
+    border: none;
+    border-radius: 30px; /* More rounded */
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s; /* Add transitions */
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.listen-button:hover {
+    /* background-color: #3e8e41; */
+    background-color: #730cd3;
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.listen-button.listening {
+    background-color: #007bff; /* Change color when listening */
+    transform: scale(1.1); /* Slight scale when listening */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.listen-button::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 8px;
+    animation: pulse 1.5s infinite ease-in-out;
+    opacity: 0;
+}
+
+.listen-button.listening::before {
+    opacity: 1;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0.8;
+    }
+}
+body {
+    background-image: url('assistance.jpg'); /* Path to your image */
+    background-size: cover; /* Adjusts the image to cover the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    /* You might want to adjust other body styles as needed, 
+       such as text color or padding, to ensure readability over the background. */
+}
+
+.chat-container {
+    /* Add any existing styles for your chat container here */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a semi-transparent background to the container for better readability */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 50px auto; /* Center the container */
+}
+
+.chat-log {
+    /* Add any existing styles for your chat log here */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color:rgba(255, 255, 255, 0.8); /* Ensure the chat log has a readable background */
+    overflow-y: auto; /* If your chat log might be long */
+    max-height: 300px;
+}
+
+.input-area {
+    /* Add any existing styles for your input area here */
+    text-align: center;
+    padding-top: 10px;
+}
+
+.listen-button {
+    /* Add any existing styles for your button here */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

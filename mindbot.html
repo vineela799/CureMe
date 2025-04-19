@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CureMe - Mind-Bot & Virtual Assistant</title>
+    <link rel="stylesheet" href="mindbot.css">
+    <style>
+        /* (Your existing styles here) */
+        body {
+            /* display: flex;
+            font-family: sans-serif;
+            margin: 0;
+            overflow: hidden;
+            background-image:url('med.jpg'); */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            /* background: linear-gradient(to right, #2b043b, #f184df); */
+            background-image:url('consult.jpg');
+           
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh; 
+            color: rgb(81, 31, 84);
+            overflow: hidden;
+        }
+
+        .sidebar {
+    width: 250px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    height: 100vh;
+    border-radius: 20px;
+}
+/* Logo styling */
+.sidebar .logo {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.sidebar .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* This will make the logo circular */
+    margin-right: 15px; /* Adds space between logo and name */
+}
+
+.sidebar .logo h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+ul li.active {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+        .chat-container {
+            flex-grow: 1;
+            padding: 20px;
+            
+        }
+
+        .chat-title {
+            margin-bottom: 10px;
+        }
+
+        .greeting {
+            margin-bottom: 10px;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .chat-input {
+            display: flex;
+            
+           
+        }
+
+        .chat-input input {
+            flex-grow: 1;
+            padding: 8px;
+            width: 250px;
+            border: 1px solid #ad1eb8;
+            border-radius: 5px 0 0 5px;
+            width:30px ;
+        }
+
+        .chat-input button {
+            padding: 8px 15px;
+            background-color: #b985c4;
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            width:30px ;
+        }
+
+        .disclaimer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #0b0b0b;
+        }
+
+        #chat-window {
+            border: 1px solid #ccc;
+            height: 450px;
+          display:fixed;
+          background: rgba(255, 255, 255, 0.2);
+            overflow-y: scroll;
+            margin-bottom: 10px;
+        }
+
+        #appointment-section {
+            margin-top: 20px;
+        }
+
+        #appointment-section input, #appointment-section button {
+            margin-bottom: 5px;
+            padding: 8px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"> 
+            <img src="C:\IIIT\logo.jpg" alt="HealSmart Logo">
+            <h2>CureMe</h2>
+        </div>
+        <ul>
+            <li class="active"><a href="index.html" style="text-decoration:none;">🏠 Home</a></li>
+            <li><a href="med.html" style="text-decoration: none;">➕Find my Meds</a></li>
+            <li><a href="mindbot.html" style="text-decoration: none;">🧠 Mind-Bot</a></li>
+            <li><a href="doctor.html" style="text-decoration: none;">👨‍⚕ Consult Doctor</a></li>
+            <li><a href="assistance.html" style="text-decoration: none;">🤖 MedVox</a></li>
+        </ul>
+    </div>
+    <div class="chat-container">
+        <h1 class="chat-title">Mind-Bot & Virtual Assistant</h1>
+        <div id="chat-window"></div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Share your Feelings here">
+            <button id="send-button">▶</button>
+        </div>
+        <p class="disclaimer">Mind-Bot cannot replace professional help. If you need it, it will guide you towards qualified mental health resources.</p>
+    </div>
+      <script src="mindbot.js"></script>
+</body>
+</html> 
