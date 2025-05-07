@@ -9,6 +9,12 @@ Intelligent chatbot for handling health-related questions.
 Appointment booking simulation with dynamic responses.
 Responsive and user-friendly interface.
 
+🛠️ Tech Stack :
+
+Languages Used: HTML, CSS, JavaScript
+
+Deployment: Netlify
+
 🌐 Live Demo  :
 
 Check out the live version of CureMe here:
