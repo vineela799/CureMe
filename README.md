@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CureMe :Virtual Health Assistant for Appointment Scheduling and Health Queries
 
 CureMe is an interactive, virtual health assistant designed to streamline appointment scheduling and respond to common health-related queries. 
@@ -21,3 +22,6 @@ Check out the live version of CureMe here:
 
 👉 https://cureme-healthcare.netlify.app/
 
+=======
+# CureMe
+>>>>>>> 0f71788c734a53528b8118cebefe7fe5059c3573
